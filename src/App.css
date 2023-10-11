@@ -1,0 +1,88 @@
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #6682A7;
+}
+
+.todo_list{
+  max-width: 80%;
+  width: 30rem;
+  padding: 0.2rem 0;
+  margin: 8rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgb(79, 77, 77);
+}
+
+.todo_heading{
+  background-color: #174178;
+  color: white;
+  width: 100%;
+  transition: 2s all;
+  font-size: 2rem;
+}
+
+.todo_heading:hover{
+  background-color: aliceblue;
+  color: #174178;
+  text-decoration: underline;
+}
+
+.input_text{
+  margin: 6px 0;
+  padding: 0.4rem 0.8rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.add_btn{
+  background-color: #174178;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  font-weight: bold;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.add_btn:hover{
+  background-color: cornflowerblue;
+}
+
+ol li{
+  font-size: 1.2rem;
+  color: #174178;
+  font-weight: 600;
+  list-style: none;
+  text-align: left;
+  padding: 0.9rem 0;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 275px){
+
+  .input_text{
+      width: 80%;
+    }
+  }
+ 
+@media only screen and (max-width: 248px){
+
+  .input_text{
+      width: 60%;
+    }
+  }
